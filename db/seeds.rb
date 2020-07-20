@@ -5,3 +5,20 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Artist.delete_all
+Song.delete_all
+
+ Artist.create!(name:"Justin Bieber").songs.create!([
+     {title: "Baby"},
+     {title: "Yummy"},
+     {title: "Love Yourself"}
+ ])
+ Artist.create!(name:"Micheal Jackson").songs.create!([
+     {title: "Thriller"},
+     {title: "Billie Jean"},
+     {title: "Abc-123"}
+ ])
+
+#  justin.songs.create!
+
+
