@@ -5,3 +5,44 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+
+puts "Starting seeding"
+artist = Artist.create([
+    { 
+        name: "Pink",
+        
+
+    },
+    {
+    name: "Snoop Dogg",
+   
+
+    },
+
+    {
+
+    name: "Common",
+    
+    }
+    ])
+
+
+
+    song = Song.create([ 
+        {
+            title: "Cry me a river",
+            artist_id: 1
+
+    },
+
+    {
+        title: "Big Butts",
+        artist_id: 1
+
+    }
+    ])
+
+
+    puts "done seeding"
