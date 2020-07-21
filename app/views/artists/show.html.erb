@@ -4,6 +4,5 @@
   <% @artist.songs.each do |song| %>
     <li><%= link_to song.title, song_path(song) %></li>
   <% end %>
-  <%= @artist.song_count %> songs
 </ul>
 
